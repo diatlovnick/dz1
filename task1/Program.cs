@@ -12,8 +12,18 @@ int number1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
 
 int number2 = Convert.ToInt32(Console.ReadLine());
-//int max = number1;
+int max ;
 
+if (number1 > number2)
+{
+    max = number1;
+}
+else
+{
+    max = number2;
+};
+Console.Write($"max =  {max}");
+/* другой вариант решения, сделал его, потому что в начале не разобрался с синтаксисом
 if (number1 > number2)
 {
     Console.Write("max = ");
@@ -24,3 +34,4 @@ else
     Console.Write("max = ");
      Console.Write(number2);
 };
+*/
